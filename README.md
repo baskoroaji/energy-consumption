@@ -182,21 +182,15 @@ Metriks Evaluasi yang dilakukan adalah metrik untuk regresi
 
 ### 2. Penjelasan Formula Metriks Evaluasi
 - MAE : MAE menghitung nilai absolut dari prediksi dan aktual 
-$$
-\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
-$$
+![alt text](https://arize.com/wp-content/uploads/2024/04/mean-absolute-error-formula.png)
 
-$y_i$ merupakan aktual sedangkan $\hat{y}_i$ merupakan prediksi dengan mengurangi dan membaginya dengan jumlah sample
+    $y_i$ merupakan aktual sedangkan $\hat{y}_i$ merupakan prediksi dengan mengurangi dan membaginya dengan jumlah sample
 - RMSE : Menghitung perbedaan nilai value yang di prediksi dan value yang di observasi/aktual
-$$
-\text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 }
-$$
+![alt text](https://arize.com/wp-content/uploads/2023/08/RMSE-equation.png)
 dimana $y_i$ dikurangi $\hat{y}_i$ lalu dikuadratkan dan dibagi dengan jumlah sample lalu di akarkan untuk menghasilkan hasil perbedaan nilai antara prediksi dan value yang aktual
 
--$R^2$ : Menghitung seberapa baik model menjelaskan varian pada variable target
-$$
-R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
-$$
+- $R^2$ : Menghitung seberapa baik model menjelaskan varian pada variable target
+![alt text](https://vitalflux.com/wp-content/uploads/2019/07/R-squared-formula-function-of-SSE-and-SST.jpg)
 $R^2$ menghitung 1 dikurang dengan total dari residual dibagi dengan total jumlah kuadrat
 
 ### 3. Hasil Perhitungan dari Metriks Evaluasi
